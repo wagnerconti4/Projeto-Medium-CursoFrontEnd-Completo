@@ -1,113 +1,54 @@
-* {
+/***********************
+Estrutura
+*/
+
+
+
+/***********************
+Tipografia
+*/
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#cabecalho {
+    background-color: #c5e3fe;
+    border-bottom: 1px solid black;
+}
+
+.container {
+    width: 1145px;
+    margin: 0 auto;
+    padding: 1.4rem 0;
+}
+
+ul#menu {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-   
+    width: 475px;
+    float: right;
 }
 
-body{
-    border: 1px red solid;
-}
-
-#topo {
-    background: rgb(144, 180, 248) url(/img/fundo-topo.png) no-repeat right top 50px;
-    height: 300px;
-    padding: 50px;
-}
-
-
-
-#Menu {
-    padding: 1em;
-    background-color: rgb(144, 180, 248);
-
-}
-
-#Menu ul::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-#Menu ul li {
-    list-style-type: none;
-
-}
-
-#Menu li a {
-    display: block;
-    padding: 0.5em 1.5em;
+ul#menu li a {
+    float: left;
     color: black;
     text-decoration: none;
-    float: right;
-
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
 }
 
-#Menu img {
-    width: 200px;
-    float: left;
-}
-
-#Comecar {
+ul#menu li.destaque a {
+    color: white;
+    border-radius: 1.2rem;
     background-color: black;
-    border-radius: 20px;
 }
 
-#main {
-    padding: 2em;
+ul#menu li a:hover {
+    color: #4c799f;
 }
 
-#main {
-    content: "";
-    clear: both;
-    display: table;
+ul#menu li.destaque a:hover {
+    color: #4c799f;
 }
-
-#main div{
-    margin:auto;
-}
-
-.Tendencias {
-    width: 25%;
-    padding: 2em;
-    float: left;
-    display: block;
-}
-
-.Tendencias img {
-    width: 20px;
-}
-
-
-
-.numeros {
-    color: rgb(156, 156, 156);
-    font-size: 60px;
-    float: left;
-}
-
-.Limpar{
-    clear: both;
-   
-}
-
-
-#topo h1 {
-
-    font-size: 50px;
-    width: 500px;
-}
-
-#topo p {
-    margin-top: 20px;
-    width: 500px;
-}
-
-#topo button {
-    margin-top: 60px;
-    padding: 0.7em 1.5em;
-    border-radius: 20px;
-    color: black;
-    background-color: white;
-
-}
-
